@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.name {
+  text-align: left;
+}
+
+.phone {
+  font-style: italic;
+}
