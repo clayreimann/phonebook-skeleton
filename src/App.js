@@ -14,7 +14,7 @@ const addContact = ({ argsHere }) => {
   console.log("Added contact");
 };
 
-function getContact() {
+function getContacts() {
   return pb.allContacts().map(contact => (
     <tr>
       <td className="name"> {contact.first + " " + contact.last} </td>
@@ -31,7 +31,7 @@ export default function App() {
         msg="Add new contacts in this form"
         addContact={addContact}
       />
-      <table>{getContact()}</table>
+      <table>{getContacts()}</table>
       {/* render all the contacts here */}
     </div>
   );
